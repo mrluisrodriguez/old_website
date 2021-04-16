@@ -1,0 +1,330 @@
+/* CSS FONTS */
+@font-face 		{
+font-family:"BankGothic";
+src: url(resources/fonts/bankgothic.ttf),
+     url(resources/fonts/bankgothic.eot),/* IE9 */
+     url(resources/fonts/bankgothic.svg);
+} /* BankGothic */
+@font-face 		{
+font-family:"LRbold";
+src: url(resources/fonts/lrbold.ttf);
+} /* LRbold */
+
+/* MISC CLASSES */
+.clear 		{clear: both;}
+.width25 	{width: 25%;}
+.width33	{width: 33%;}
+.width50 	{width: 50%;}
+.width67 	{width: 67%;}
+.width75	{width: 75%;}
+.width100	{width: 100%;}
+.blue 		{color: #53D5FD;}
+.gray 		{color: #555;}
+.white 		{color: #FFF;}
+
+/* INITIALIZE */
+body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	min-width: 320px;
+	padding: 0;
+	margin: 0 auto;
+	border: 0;
+	font-family: "Avenir", "Helvetica";
+	font-size: 1em;
+	font-weight: 100;
+	color: #555;
+}
+h1 {
+	color: #555;
+	font-family: "LRbold", "Avenir", "Helvetica";
+	font-weight: 500;
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+h2 {
+	color: #53D5FD;
+	font-family: "Avenir", "Helvetica";
+	font-weight: 100;
+	font-size: 2em;
+	text-align: left;
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+h3 {
+	font-family: "Avenir", "Helvetica";
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 1.25em;
+	text-align: left;
+	margin-bottom: 0;
+	/* display: inline-flex; */
+	/* float: left; */
+	/* margin: 0; */
+}
+h4 {
+	font-family: "Avenir", "Helvetica";
+	font-weight: 100;
+	text-align: left;
+	margin: 0;
+}
+section, footer {
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	padding-bottom: 2em;
+}
+
+/* CLASSES */
+.container {
+	margin: 0 auto;
+	width: 70%;
+	max-width: 960px;
+}
+.paddingBottom{
+	padding-bottom: 1em;
+}
+.centerdiv {
+	margin: 0 auto;
+}
+.button {
+	width: 10em;
+	padding: .01%;
+	text-align: center;
+	font-family: "Avenir", "Helvetica";
+	font-size:  1.125em;
+	background-color: #555;	
+}
+.button a{
+	color: #FFF;
+	text-decoration: none;
+}
+.button:hover {
+	background-color: #53D5FD;
+	/* transition-duration: 500; */
+}
+.imagetext {
+	position: relative;
+	top: 15%;
+	left: 0px;
+	/* transform: translate(-50%, -50%); */
+}
+.italic {	
+	font-style: italic;
+	margin: 0;
+}
+
+/* MENU */
+header {
+	font-family: "Avenir", "Helvetica";
+	text-transform: lowercase;
+	background-color: #53D5FD;
+	text-align: center;
+	line-height: 3em;
+}
+.navbutton {
+	color: #FFF;
+	text-decoration: none;
+	background-color: transparent;
+	padding: 0 3%;
+	display: inline-block;
+	width: 10%;
+}
+.navbutton:hover {
+	color: #555;
+	background-color: #FFF;
+	font-weight: bold;
+}
+
+/* HOME */
+#home {
+	height: 80%;
+	min-height: 20em;
+	background: transparent;
+	background-image: url("Resources/Images/Home.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	z-index: 2;
+}
+#home img {
+	max-width: 100%;
+	height: auto;
+}
+#home h1 {
+	color: #FFF;
+	font-size: 5em;
+}
+
+/* BIO */
+#bio h3 {
+	text-align: center;
+	color: #FFF;
+}
+
+/* BIO & CONTACT */
+#home p, #bio p, #contact p{
+	text-align: center;
+	color: #FFF;
+	font-size: 24px;	
+}
+
+/* CODE */
+.longList {
+	min-width: 12em;
+	height: 100%;
+	margin: 0;
+	float: left;
+}
+.longList p {
+	margin: 0;
+}
+.bullet1:before {color: #53D5FD;}
+.bullet2:before {color: #FFF;}
+.bullet1:before, .bullet2:before {
+	display: inline-block;
+	content: "\25CF";
+	padding-right: .5em;
+}
+.bullet1, .bullet2 {
+	font-size: 0.875em;
+	margin: 0;
+}
+.docIcon {
+	color: #53D5FD;
+}
+.docIcon:hover {
+	color: #555;
+}
+.resumeBlock {
+	height: 100%;
+	display: inline-flex;
+	float: left;
+	margin: 0;
+}
+	
+/* MUSIC */
+.instruments {
+/* 	position: relative; */
+	margin: auto;
+}
+.instruments p {
+	text-align: center;
+/* 	background-color: red; */
+}
+.musicClip{
+	color: #555;
+	text-decoration: none;
+}
+.musicClip:hover {
+	color: #FFF;
+}
+.imgguitar {
+	background-image: url(Resources/Images/Instruments/flo1.jpg);
+}
+
+/* CONTACT */
+#contact {
+	text-align: center;
+}
+#contact p {
+	font-size: .75em;
+}
+#contact a {
+	color: #555;
+}
+#contact a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+.contactlink {
+	padding: 0 1.5em;
+	display: inline-flex;
+}
+.contacticon {
+	font-size: 2.5em !important;
+	color: #FFF;
+}
+.contacticon:hover {
+	color: #555;
+}
+
+/* TEMP */
+#home, #code, #school {
+	background-color: #FFF;
+}
+#bio, #contact, #music {
+	background: #53D5FD;
+	background: -webkit-linear-gradient(left, #30C5CE, #53D5FD); /*Safari 5.1 to 6.0*/
+	background: -o-linear-gradient(left, #30C5CE, #53D5FD); /*Opera 11.1 to 12.0*/
+	background: -moz-linear-gradient(left, #30C5CE, #53D5FD); /*Firefox 3.6 to 15*/
+	background: linear-gradient(to left, #30C5CE, #53D5FD); /*Standard syntax	*/
+}
+#bio h2, #contact h2, #music h2 {
+	color: #FFF;
+}
+
+/* TRANSITION EFFECTS */
+.navbutton, .contacticon {
+	/* Most Browsers */
+	transition-property:color, background-color, font-weight;
+	transition-duration:.5s;
+	transition-timing-function:linear;
+	transition-delay:0s;
+	/* Safari */
+	-webkit-transition-property:color, background-color, font-weight;
+	-webkit-transition-duration:.5s;
+	-webkit-transition-timing-function:linear;
+	-webkit-transition-delay:0s;
+}
+.navbutton:hover, .contacticon:hover {
+	
+	/* Most Browsers */
+	transition-property:color, background-color, font-weight;
+	transition-duration:.2s;
+	transition-timing-function:linear;
+	transition-delay:0s;
+	/* Safari */
+	-webkit-transition-property:color, background-color, font-weight;
+	-webkit-transition-duration:.2s;
+	-webkit-transition-timing-function:linear;
+	-webkit-transition-delay:0s;
+}
+
+/* Tablet */
+@media all and (min-width:480px) and (max-width:840px) {
+	.navbutton {
+		width: auto; 
+		padding: 0 2%;
+	}
+	#home {
+		height: 30em;
+		background: transparent;
+		background-image: url("Resources/Images/Home.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#home h1 {font-size: 3em;}
+	.resumeBlock {width: 100%;}
+	.width25 {width: 100%;}
+	.width33 {width: 100%;}
+}
+/* Smartphone */
+@media all and (max-width:479px) {
+	.navbutton {
+		width: auto; 
+		padding: 0 1%;
+	}
+	#home {
+		height: 20em;
+		background: transparent;
+		background-image: url("Resources/Images/Home.jpg");
+		background-size: auto 100%;
+	}
+	#home h1 {font-size: 3em;}
+	.resumeBlock {width: 100%;}
+	.contactlink {padding: 0 .4em;}
+}

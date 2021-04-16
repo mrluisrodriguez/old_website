@@ -1,0 +1,307 @@
+/* CSS FONTS */
+@font-face 		{
+font-family:"BankGothic";
+src: url(Resources/Fonts/BankGothic.ttf),
+     url(Resources/Fonts/BankGothic.eot),/* IE9 */
+     url(Resources/Fonts/BankGothic.svg);
+} /* BankGothic */
+
+
+/* INITIALIZE */
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	border: 0;
+	font-family: "Avenir", "Helvetica";
+	font-size: 1em;
+	font-weight: 100;
+	background-image: url(Resources/Images/Graphic2%20B%26W.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+/* MISC CLASSES */
+.clear 	{clear: both;}
+.blue 	{color: #53D5FD;}
+.gray 	{color: #555;}
+
+
+/* MENU */
+header 			{
+	background-color: #53D5FD;
+	height: 4em;
+	line-height: 4em;
+	font-family: "Avenir", "Helvetica";
+	font-weight: 500;
+	font-size: 1em;
+	text-align: center;
+	color: #555;
+}
+.menu 			{display: inline; padding: 0 3%;}
+.menu a 		{
+	color: #FFF;
+	text-decoration: none;
+	
+	/* Most Browsers */
+	transition-property:color;
+	transition-duration:.25s;
+	transition-timing-function:linear;
+	transition-delay:0s;
+	/* Safari */
+	-webkit-transition-property:color;
+	-webkit-transition-duration:.25s;
+	-webkit-transition-timing-function:linear;
+	-webkit-transition-delay:0s;
+}
+.menu a:hover 	{color: #555}
+
+
+/* HOME */
+#home		{text-align: center; padding: 5% 10% 10% 10%;}
+h1			{
+	color: #53D5FD;
+	font-family: "BankGothic", "Avenir", "Helvetica";
+	font-weight: 100;
+	font-size: 6em;
+}
+.homeinfo 	{
+	padding: 0 10%;
+	color: #555;
+	font-family: "Avenir", "Helvetica";
+	font-weight: 100;
+	font-size: 2em;
+	margin-top: -2em;
+}
+
+
+/* SERVICES */
+#services 	{background-color: gold; height: 15em;}
+#services1, #services2, #services3 {
+	min-height: 15em;
+	position: relative;
+	float: left;
+	display: inline-block;
+	padding: 2%;
+	text-align: center;
+	color: #FFF;
+	font-family: "Avenir", "Helvetica";
+	font-weight: 500;
+	font-size: 1.5em;
+}
+#services1 	{width: 29%; background-color: #53D5FD;}
+#services2 	{width: 30%; background-color: #555;}
+#services3 	{width: 29%; background-color: #53D5FD;}
+h2			{
+	font-family: "Avenir", "Helvetica";
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+
+/* SOUNDS */
+#sounds {
+	background-color: #FFF;
+	padding: 3% 10%;
+	margin: 0;
+	text-align: center;
+}
+.soundsbox {
+	background-color: red;
+	width: 50%;
+	float: left;
+}
+
+
+/*
+	<section id="sounds">
+		<div>
+			<div>
+				<h2>SOUNDS</h2>
+			</div>
+			
+			<div>
+				<h3>Guitar Tones</h3>
+				<p><a href="#">Fender</a></p>
+				<p><a href="#">Gibson</a></p>
+				<p><a href="#">Gretsch</a></p>
+				<p><a href="#">Paul Reed Smith</a></p>
+			</div>
+
+		</div>
+		<div class="clear"></div>
+	</section>
+*/
+
+
+
+
+
+
+/* SOCIAL */
+#social 			{
+	background-color: #555;
+	height: 10em;
+	line-height: 10em;
+	font-family: "Avenir", "Helvetica";
+	font-weight: 500;
+	font-size: 1em;
+	text-align: center;
+}
+.sociallink 		{display: inline; padding: 0 3%;}
+.sociallink a 		{
+	color: #FFF;
+	text-decoration: none;
+	
+	/* Most Browsers */
+	transition-property:color;
+	transition-duration:.25s;
+	transition-timing-function:linear;
+	transition-delay:0s;
+	/* Safari */
+	-webkit-transition-property:color;
+	-webkit-transition-duration:.25s;
+	-webkit-transition-timing-function:linear;
+	-webkit-transition-delay:0s;
+}
+.sociallink a:hover {color: #53D5FD}
+
+
+/* FOOTER */
+footer 			{
+	background-color: #53D5FD;
+	padding: 4% 0% 3% 0%;
+	font-family: "Avenir", "Helvetica";
+	font-weight: 500;
+	font-size: .75em;
+	text-align: center;
+	color: #555;
+}
+footer a 		{
+	font-size: 4em;
+	text-decoration: none;
+	color: #FFF;
+	
+	/* Most Browsers */
+	transition-property:color;
+	transition-duration:.25s;
+	transition-timing-function:linear;
+	transition-delay:0s;
+	/* Safari */
+	-webkit-transition-property:color;
+	-webkit-transition-duration:.25s;
+	-webkit-transition-timing-function:linear;
+	-webkit-transition-delay:0s;
+}
+footer a:hover 	{
+	color: #555;
+}
+
+
+/*
+	<footer>
+		<div class="footerbox">
+			<div><a href="index.html">LR SOUNDS</a></div>
+			<div><p>&copy; 2015 LR Sounds. All rights reserved. Design by Luis Rodriguez.</p></div>
+		</div>
+	</footer>
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INITIALIZE */
+/*
+header, #home, #services, #sounds, #social, footer {
+	width: 100%;
+	margin:0 auto;
+	padding: 1em;
+}
+.headerbox, .homebox, .servicesbox, .soundsbox, .socialbox, .footerbox {
+	width: 80%;
+	margin:0 auto;
+	padding: 1em 0;
+}
+*/
+
+/* MISC CLASSES */
+/*
+h1 {
+	font-size: 2.4em; 
+	text-align: left; 
+	font-family: "BankGothic", "Avenir", "Helvetica";
+}
+h2 {
+	font-size: 1.2em; 
+	text-align: left; 
+	font-family: "Avenir", "Helvetica";
+}
+*/
+
+/*
+.div25,.div33,.div50,.div66,.div75,.div100 {
+	position:relative;
+	float:left;
+	display:inline-block;
+	color:#555;
+	text-align:left;
+	font-size:.875em;
+	font-weight:200;
+	line-height:1.375em;
+	padding:0 1.5% 2em;
+}
+.div25 {min-width:10em; width:22%;}
+.div33 {min-width:10em; width:30%;}
+.div50 {min-width:10em; width:47%;}
+.div66 {min-width:10em; width:63%;}
+.div75 {min-width:10em; width:72%;}
+.div100 {min-width:10em; width:97%;}
+*/
+
+/* SECTION BACKGROUND COLORS */
+/*
+header 		{background-color:#53D5FD}
+#home		{background-color:#FFF;}
+#services1	{background-color:#53D5FD;}
+#services2	{background-color:#555;}
+#services3	{background-color:#53D5FD;}
+#sounds		{background-color:#FFF;}
+#social		{background-color:#555;}
+footer		{background-color:#53D5FD;}
+*/
+
+/* FONT COLORS */
+/*
+colormain   	{color:#FFF}
+coloraccent1 	{color:#53D5FD;}
+coloraccent2 	{color:#555;}
+*/
+
+/* SOCIAL SECTION */
+/*
+.socialbox	{
+	text-align: center;
+	margin: 0 auto;
+}
+.sociallink {
+	border-radius: 50%;
+	background-color: white;
+	display: inline;
+	font: 700;
+	padding: 3em;
+}
+*/
+
+/* FOOTER SECTION */
+/* .footerbox 	{text-align: center;} */
